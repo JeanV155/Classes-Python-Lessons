@@ -10,5 +10,11 @@
         "model": "Malibu",
         "year": 2024,
         "image": "car1.jpg"
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "year": 2024,
+        "image": "malibu_image.jpg"
     }
 ]
