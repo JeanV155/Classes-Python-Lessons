@@ -5,10 +5,18 @@ class FlashCards:
         
         
     
-    def display_info(self):
-        return f"{self.year} {self.make} {self.model}"
+    def ask_question(self):
+        print(self.question)
+        
     
-    def to_dict(self):
-        return {"make": self.make, "model": self.model, "year": self.year, "image": self.image}
+    def ask_question(self):
+        print(self.answer)
+         
+        question = input("enter a question:")
+        answer = input("enter the answer:")
+        
+        FlashCards
 
+
+       
         
