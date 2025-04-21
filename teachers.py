@@ -25,25 +25,9 @@ def add_flashcard(question, answer):
     with open("FlashCard.json", "w") as file:
         json.dump(q, file, indent=4)
 
-# Teacher mode: prompt the teacher to input question-answer pairs
-def teacher_mode():
-    while True:
-        question = input("Enter the word/phrase (question): ")
-        if question.lower() == 'exit':
-            break
-        answer = input("Enter the answer: ")
-        
-        # Add the flashcard to the dictionary and save it to the file
-        add_flashcard(question, answer)
-        print(f"Flashcard added: {question} -> {answer}")  
 
 
-# Start teacher mode
-teacher_mode() 
 
-def student_mode():
-     
-        
              
     
         
