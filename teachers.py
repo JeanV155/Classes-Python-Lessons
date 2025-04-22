@@ -14,18 +14,36 @@ class FlashCard:
         self.answer = answer
 
 # Function to add a new flashcard
-    def to_dict(self):
-        return {self.question: self.answer}
-    
-    
 
 
+def add_flashcard(question, answer):
+    FlashCard_data[question] = answer
+    q = {
+        "Question":question,
+        "Answer":answer
+    }
     # Write the updated dictionary back to the JSON file
     with open("FlashCard.json", "w") as file:
+        json.dump(FlashCard_data, file, indent=4)
         json.dump(q, file, indent=4)
 
+# Teacher mode: prompt the teacher to input question-answer pairs
+def teacher_mode(): 
+    def teacher_mode():
+        
+        # Add the flashcard to the dictionary and save it to the file
+        add_flashcard(question, answer)
+        print(f"Flashcard added: {question} -> {answer}")
+        print(f"Flashcard added: {question} -> {answer}")  
 
 
+# Start teacher mode
+teacher_mode()
+teacher_mode() 
+
+    
+def student_mode():
+     
 
              
     
