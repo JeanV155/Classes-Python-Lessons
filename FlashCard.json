@@ -1,4 +1,8 @@
 {
     "Question": "what day is the test",
-    "Answer": "today"
+    "Answer": "today",
+    "when is the test": {
+        "question": "when is the test",
+        "answer": "today"
+    }
 }
