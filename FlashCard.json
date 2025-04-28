@@ -1,8 +1,14 @@
-{
-    "Question": "what day is the test",
-    "Answer": "today",
-    "when is the test": {
+[
+    {
         "question": "when is the test",
         "answer": "today"
+    },
+    {
+        "question": "when is the tes",
+        "answer": "today"
+    },
+    {
+        "question": "today",
+        "answer": "yes"
     }
-}
+]

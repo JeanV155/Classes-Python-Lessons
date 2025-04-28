@@ -34,19 +34,21 @@ def teacher_mode():
         add_flashcard(question, answer)
         print(f"Flashcard for '{question}' added successfully.")
 
-# Student mode
+
 def student_mode():
     print("Welcome to Student Mode!")
     score = 0
     total_flashcards = len(FlashCard_data)
 
-    for question, card in FlashCard_data.items():
-        answer = input(f"Question: {question}\nYour Answer: ")
-        if answer == card["answer"]:
+    for card in FlashCard_data:
+        correct_answer = card["answer"]
+
+        user_answer = input(f"Question: {card["question"]}\nYour Answer: ")
+        if user_answer.strip().lower() == correct_answer.strip().lower():
             score += 1
             print("Correct!")
         else:
-            print(f"Incorrect. The correct answer is: {card['answer']}")
+            print(f"Incorrect. The correct answer is: {correct_answer}")
 
     print(f"\nYour total score: {score}/{total_flashcards}")
 
